@@ -295,7 +295,7 @@ var multiObj1 = [
     "example" : ["black", "white", "hispanic", "mongloid"]
 }, {
     "type1" : "gender",
-    "example1" : ["male", "female", "trans-woman", "trans-man"]
+    "example1" : ["male", "female",]
 }
 
 ]
