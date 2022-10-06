@@ -12,7 +12,7 @@ This may include:
 **Goal**: Attain Sololearn's Certification
 
  - [x] Getting Started
- - [ ] Basic Concept
+ - [x] Basic Concept
  - [ ] Functions
  - [ ] Pointers & Struct
  - [ ] Array, Map & Map
