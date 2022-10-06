@@ -1,6 +1,7 @@
 package main
 
 import (
+	"booking/helper"
 	"fmt"
 	"strconv"
 	"strings"
@@ -8,10 +9,10 @@ import (
 
 func main() {
 	var conferenceName = "-The Go way-"
+	helper.SayHello(conferenceName)
 	const conferenceTickets = 50
 	var remainingTickets uint = 50
 	var bookings []string
-	fmt.Printf("Welcome to %v booking application\n", conferenceName)
 	fmt.Println("Get your Tickets Now!!! \n We have", remainingTickets, "left out of ", conferenceTickets, "total")
 
 	for len(bookings) < 50 && remainingTickets > 0 {
@@ -37,7 +38,8 @@ func main() {
 		isValidTickets := userTickets > 0 && userTickets <= remainingTickets
 
 		if isValidName && isValidEmail && isValidTickets {
-			var newBooking = "Name : " + firstName + lastName + "\n" + "email : " + email + "\n" + "No. of tickets : " + strconv.Itoa(int(userTickets))
+			fullName := firstName + " " + lastName
+			var newBooking = "Name : " + fullName + "\n" + "email : " + email + "\n" + "No. of tickets : " + strconv.Itoa(int(userTickets))
 
 			remainingTickets = remainingTickets - userTickets
 			bookings = append(bookings, newBooking)

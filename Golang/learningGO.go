@@ -3,6 +3,6 @@ package main
 
 import "fmt"
 
-func main() {
+func yes() {
 	fmt.Println("Hello World")
 }
