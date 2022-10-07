@@ -13,7 +13,7 @@ This may include:
 
  - [x] Getting Started
  - [x] Basic Concept
- - [ ] Functions
+ - [x] Functions
  - [ ] Pointers & Struct
  - [ ] Array, Map & Map
  - [ ] Concurrency
