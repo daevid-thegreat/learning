@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cef81765-c2d0-4729-85f6-29731236e2eb" name="Changes" comment="Updated booking app">
-      <change afterPath="$PROJECT_DIR$/Golang/Booking/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Golang/Booking/helper/helper.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Golang/TwitterBot/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Golang/TwitterBot/main.go" afterDir="false" />
+    <list default="true" id="cef81765-c2d0-4729-85f6-29731236e2eb" name="Changes" comment="new update to booking app">
+      <change afterPath="$PROJECT_DIR$/Golang/GreatServer/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Golang/GreatServer/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Golang/GreatServer/static/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Golang/GreatServer/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/.idea/Javascript.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Javascript/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Golang/Booking-app.go" beforeDir="false" afterPath="$PROJECT_DIR$/Golang/Booking/Booking-app.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Golang/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Golang/learningGO.go" beforeDir="false" afterPath="$PROJECT_DIR$/Golang/learningGO.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Golang/TwitterBot/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/Golang/TwitterBot/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Javascript/learningJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/Javascript/learningJS.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Go File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -52,6 +56,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
@@ -76,7 +81,7 @@
       <recent name="C:\Users\mckin\Desktop\Works\Web And Software Development\learning .py, .js and .go\Golang\Booking\helper" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build Booking/">
+  <component name="RunManager" selected="Go Build.go build main.go (1)">
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="learning .py and .js" />
       <working_directory value="$PROJECT_DIR$" />
@@ -93,6 +98,22 @@
       <kind value="DIRECTORY" />
       <directory value="$PROJECT_DIR$/Golang/Booking" />
       <filePath value="$PROJECT_DIR$/Golang/Booking-app.go|$PROJECT_DIR$/Golang/Booking/Booking-app.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learning .py and .js" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Golang/GreatServer/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learning .py and .js" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/Golang/TwitterBot/main.go" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
@@ -149,7 +170,15 @@
     </configuration>
     <list>
       <item itemvalue="Go Build.go build Booking/" />
+      <item itemvalue="Go Build.go build main.go (1)" />
+      <item itemvalue="Go Build.go build main.go" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build main.go (1)" />
+        <item itemvalue="Go Build.go build main.go" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -183,7 +212,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added Goland" />
     <MESSAGE value="Updated booking app" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated booking app" />
+    <MESSAGE value="new update to booking app" />
+    <option name="LAST_COMMIT_MESSAGE" value="new update to booking app" />
   </component>
   <component name="VgoProject">
     <integration-enabled>false</integration-enabled>

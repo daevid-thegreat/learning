@@ -164,6 +164,7 @@ compare2(9);
 let people = {"GOAT":"Wayne ", "queen":"Nicki ", "GOAT2":"Drake ", "Rookie":"Gudda ", "Rookie2":"Twist "};
 let personas = ""
 
+let h;
 for (h in people) {
     personas += people[h];
     console.log(h)
@@ -334,7 +335,7 @@ console.log(nickiStuff)
 function updateSpotify(id, prop, value) {
     if (value === [""]) {
         delete spotify[id][prop]
-    }else if (prop == "tracks") {
+    }else if (prop === "tracks") {
         spotify[id][prop] = spotify[id][prop] || [];
         spotify[id][prop].push(value);
     }else {
@@ -346,8 +347,8 @@ function updateSpotify(id, prop, value) {
 console.log(updateSpotify("#0003", "tracks", "petty"))
 //loops
 //while loops
-var whily = [];
-var i = 0;
+const whily = [];
+let i = 0;
 while (i < 10) {
     whily.push(i)
     i++;
@@ -357,7 +358,7 @@ console.log(whily)
 
 //for loop
 forly = [];
-for (var i = 5; i > 0; i--) {
+for (i = 5; i > 0; i--) {
     forly.push(i)
 }
 console.log(forly)
@@ -376,8 +377,8 @@ for (var k = 1; k < 10; k+=2) {
 }
 console.log(oddly)
 //do while loops
-var dodo = [];
-var h = 10;
+const dodo = [];
+h = 10;
 do {dodo.push(h);
     h++;
 
