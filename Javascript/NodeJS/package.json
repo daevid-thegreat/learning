@@ -1,0 +1,16 @@
+{
+  "name": "learnnode",
+  "version": "1.0.0",
+  "description": "Learning NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "David Makinde",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.20",
+    "uuid": "^9.0.0"
+  }
+}
