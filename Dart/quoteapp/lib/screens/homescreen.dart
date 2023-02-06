@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -160,41 +159,46 @@ class _HomeScreenState extends State<HomeScreen> {
       appBar: AppBar(
         title: const Text('Random Quotes'),
       ),
-      body: Column(
-        children: [
-          Padding(
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+          children: [
+            Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Text(quote,
+                    style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25,
+                        color: Colors.black45))),
+            Padding(
               padding: const EdgeInsets.all(10.0),
-              child: Text(quote,
+              child: Text(author,
                   style: const TextStyle(
+                      fontStyle: FontStyle.italic,
                       fontWeight: FontWeight.bold,
-                      fontSize: 25,
-                      color: Colors.black45))),
-          Padding(
-            padding: const EdgeInsets.all(10.0),
-            child: Text(author,
-                style: const TextStyle(
-                    fontStyle: FontStyle.italic,
-                    fontWeight: FontWeight.bold,
-                    fontSize: 18,
-                    color: Colors.blue)),
-          ),
-          ElevatedButton(
-            onPressed: () async {
-              var url = Uri.parse(
-                  "https://famous-quotes4.p.rapidapi.com/random?category=$category&count=$count");
-              var response = await http.get(
-                url,
-                headers: headers,
-              );
-              var body = jsonDecode(response.body);
-              quote = body[0]["text"];
-              author = body[0]["author"];
+                      fontSize: 18,
+                      color: Colors.blue)),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () async {
+                  var url = Uri.parse(
+                      "https://famous-quotes4.p.rapidapi.com/random?category=$category&count=$count");
+                  var response = await http.get(
+                    url,
+                    headers: headers,
+                  );
+                  var body = jsonDecode(response.body);
+                  quote = body[0]["text"];
+                  author = body[0]["author"];
 
-              setState(() {});
-            },
-            child: const Text('Get some random quotes!!!'),
-          ),
-        ],
+                  setState(() {});
+                },
+                child: const Text('Get some random quotes!!!'),
+              ),
+            ),
+          ],
+        ),
       ),
     ));
   }
